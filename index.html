@@ -10,6 +10,25 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        #countik-widget {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .pow-countik {
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -26,7 +45,7 @@
           if (typeof window.initializeCountikWidget === 'function') {
             window.initializeCountikWidget({
               container: '#countik-widget',
-              themeColor: '#444444',
+              themeColor: '#ffffff',
               uniqueId: 'therisingproject',
               language: 'en'
             });
@@ -36,7 +55,7 @@
         firstScript.parentNode.insertBefore(countikWidget, firstScript);
       })();
     </script>
-    <a href="https://countik.com/user/therisingproject" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
+    <a href="https://countik.com/user/therisingproject" target="_blank" class="pow-countik" style="font-size:11px;color:#666;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
 
 </body>
 </html>
