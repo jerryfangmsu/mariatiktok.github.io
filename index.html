@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: 50px auto;
             padding: 20px;
             background-color: #ffffff;
@@ -19,11 +19,12 @@
             margin-bottom: 40px;
         }
         
-        #countik-widget {
+        .widget-container {
             background-color: #f5f5f5;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
         
         .pow-countik {
@@ -35,27 +36,55 @@
 <body>
     <h1>Welcome to The Rising Project</h1>
     
-    <div id="countik-widget"></div>
-    <script>
-      (function() {
-        var countikWidget = document.createElement('script');
-        countikWidget.src = 'https://countik.com/widget.js';
-        countikWidget.async = true;
-        countikWidget.onload = function() {
-          if (typeof window.initializeCountikWidget === 'function') {
-            window.initializeCountikWidget({
-              container: '#countik-widget',
-              themeColor: '#20d556',
-              uniqueId: 'therisingproject',
-              language: 'en'
-            });
-          }
-        };
-        var firstScript = document.getElementsByTagName('script')[0];
-        firstScript.parentNode.insertBefore(countikWidget, firstScript);
-      })();
-    </script>
-    <a href="https://countik.com/user/therisingproject" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
+    <!-- First Widget - therisingproject (Green) -->
+    <div class="widget-container">
+        <div id="countik-widget-1"></div>
+        <script>
+          (function() {
+            var countikWidget = document.createElement('script');
+            countikWidget.src = 'https://countik.com/widget.js';
+            countikWidget.async = true;
+            countikWidget.onload = function() {
+              if (typeof window.initializeCountikWidget === 'function') {
+                window.initializeCountikWidget({
+                  container: '#countik-widget-1',
+                  themeColor: '#20d556',
+                  uniqueId: 'therisingproject',
+                  language: 'en'
+                });
+              }
+            };
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(countikWidget, firstScript);
+          })();
+        </script>
+        <a href="https://countik.com/user/therisingproject" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
+    </div>
+
+    <!-- Second Widget - fifty.410 (Red) -->
+    <div class="widget-container">
+        <div id="countik-widget-2"></div>
+        <script>
+          (function() {
+            var countikWidget2 = document.createElement('script');
+            countikWidget2.src = 'https://countik.com/widget.js';
+            countikWidget2.async = true;
+            countikWidget2.onload = function() {
+              if (typeof window.initializeCountikWidget === 'function') {
+                window.initializeCountikWidget({
+                  container: '#countik-widget-2',
+                  themeColor: '#e10909',
+                  uniqueId: 'fifty.410',
+                  language: 'en'
+                });
+              }
+            };
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(countikWidget2, firstScript);
+          })();
+        </script>
+        <a href="https://countik.com/user/fifty.410" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
+    </div>
 
 </body>
 </html>
