@@ -33,20 +33,7 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             margin-bottom: 30px;
-        }
-        
-        .iframe-container {
-            background-color: #f5f5f5;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
             text-align: center;
-        }
-        
-        .pow-countik {
-            text-align: center;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -56,156 +43,97 @@
     <h2>Live Follower Counts</h2>
     
     <!-- LiveCounts iframe 1 - therisingproject -->
-    <div class="iframe-container">
-        <iframe height="80px" width="300px" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/therisingproject" style="border: 0; width:300px; height:80px;"></iframe>
+    <div class="widget-container">
+        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/therisingproject"></iframe>
     </div>
 
     <!-- LiveCounts iframe 2 - fifty.410 -->
-    <div class="iframe-container">
-        <iframe height="80px" width="300px" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/fifty.410" style="border: 0; width:300px; height:80px;"></iframe>
+    <div class="widget-container">
+        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/fifty.410"></iframe>
     </div>
 
     <!-- LiveCounts iframe 3 - tirzepatidetales -->
-    <div class="iframe-container">
-        <iframe height="80px" width="300px" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/tirzepatidetales" style="border: 0; width:300px; height:80px;"></iframe>
+    <div class="widget-container">
+        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/tirzepatidetales"></iframe>
     </div>
 
     <!-- LiveCounts iframe 4 - phdlifehacks -->
-    <div class="iframe-container">
-        <iframe height="80px" width="300px" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/phdlifehacks" style="border: 0; width:300px; height:80px;"></iframe>
+    <div class="widget-container">
+        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/phdlifehacks"></iframe>
     </div>
 
     <!-- LiveCounts iframe 5 - glp1newsnow -->
-    <div class="iframe-container">
-        <iframe height="80px" width="300px" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/glp1newsnow" style="border: 0; width:300px; height:80px;"></iframe>
+    <div class="widget-container">
+        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/glp1newsnow"></iframe>
     </div>
 
     <h2>Countik Widgets</h2>
 
-    <!-- Widget 1 - therisingproject (Green) -->
+    <!-- Countik Widget 1 -->
     <div class="widget-container">
         <div id="countik-widget-1"></div>
-        <script>
-          (function() {
-            var countikWidget = document.createElement('script');
-            countikWidget.src = 'https://countik.com/widget.js';
-            countikWidget.async = true;
-            countikWidget.onload = function() {
-              if (typeof window.initializeCountikWidget === 'function') {
-                window.initializeCountikWidget({
-                  container: '#countik-widget-1',
-                  themeColor: '#20d556',
-                  uniqueId: 'therisingproject',
-                  language: 'en'
-                });
-              }
-            };
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(countikWidget, firstScript);
-          })();
-        </script>
-        <a href="https://countik.com/user/therisingproject" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
     </div>
 
-    <!-- Widget 2 - fifty.410 (Red) -->
+    <!-- Countik Widget 2 -->
     <div class="widget-container">
         <div id="countik-widget-2"></div>
-        <script>
-          (function() {
-            var countikWidget2 = document.createElement('script');
-            countikWidget2.src = 'https://countik.com/widget.js';
-            countikWidget2.async = true;
-            countikWidget2.onload = function() {
-              if (typeof window.initializeCountikWidget === 'function') {
-                window.initializeCountikWidget({
-                  container: '#countik-widget-2',
-                  themeColor: '#e10909',
-                  uniqueId: 'fifty.410',
-                  language: 'en'
-                });
-              }
-            };
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(countikWidget2, firstScript);
-          })();
-        </script>
-        <a href="https://countik.com/user/fifty.410" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
     </div>
 
-    <!-- Widget 3 - tirzepatidetales (Cyan) -->
+    <!-- Countik Widget 3 -->
     <div class="widget-container">
         <div id="countik-widget-3"></div>
-        <script>
-          (function() {
-            var countikWidget3 = document.createElement('script');
-            countikWidget3.src = 'https://countik.com/widget.js';
-            countikWidget3.async = true;
-            countikWidget3.onload = function() {
-              if (typeof window.initializeCountikWidget === 'function') {
-                window.initializeCountikWidget({
-                  container: '#countik-widget-3',
-                  themeColor: '#00d8f5',
-                  uniqueId: 'tirzepatidetales',
-                  language: 'en'
-                });
-              }
-            };
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(countikWidget3, firstScript);
-          })();
-        </script>
-        <a href="https://countik.com/user/tirzepatidetales" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
     </div>
 
-    <!-- Widget 4 - phdlifehacks (Purple) -->
+    <!-- Countik Widget 4 -->
     <div class="widget-container">
         <div id="countik-widget-4"></div>
-        <script>
-          (function() {
-            var countikWidget4 = document.createElement('script');
-            countikWidget4.src = 'https://countik.com/widget.js';
-            countikWidget4.async = true;
-            countikWidget4.onload = function() {
-              if (typeof window.initializeCountikWidget === 'function') {
-                window.initializeCountikWidget({
-                  container: '#countik-widget-4',
-                  themeColor: '#8b27dd',
-                  uniqueId: 'phdlifehacks',
-                  language: 'en'
-                });
-              }
-            };
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(countikWidget4, firstScript);
-          })();
-        </script>
-        <a href="https://countik.com/user/phdlifehacks" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
     </div>
 
-    <!-- Widget 5 - glp1newsnow (Lime) -->
+    <!-- Countik Widget 5 -->
     <div class="widget-container">
         <div id="countik-widget-5"></div>
-        <script>
-          (function() {
-            var countikWidget5 = document.createElement('script');
-            countikWidget5.src = 'https://countik.com/widget.js';
-            countikWidget5.async = true;
-            countikWidget5.onload = function() {
-              if (typeof window.initializeCountikWidget === 'function') {
-                window.initializeCountikWidget({
-                  container: '#countik-widget-5',
-                  themeColor: '#c5d20f',
-                  uniqueId: 'glp1newsnow',
-                  language: 'en'
-                });
-              }
-            };
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(countikWidget5, firstScript);
-          })();
-        </script>
-        <a href="https://countik.com/user/glp1newsnow" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
     </div>
+
+    <!-- Load Countik script ONCE at the end -->
+    <script src="https://countik.com/widget.js"></script>
+    <script>
+        if (typeof window.initializeCountikWidget === 'function') {
+            window.initializeCountikWidget({
+                container: '#countik-widget-1',
+                themeColor: '#20d556',
+                uniqueId: 'therisingproject',
+                language: 'en'
+            });
+            
+            window.initializeCountikWidget({
+                container: '#countik-widget-2',
+                themeColor: '#e10909',
+                uniqueId: 'fifty.410',
+                language: 'en'
+            });
+            
+            window.initializeCountikWidget({
+                container: '#countik-widget-3',
+                themeColor: '#00d8f5',
+                uniqueId: 'tirzepatidetales',
+                language: 'en'
+            });
+            
+            window.initializeCountikWidget({
+                container: '#countik-widget-4',
+                themeColor: '#8b27dd',
+                uniqueId: 'phdlifehacks',
+                language: 'en'
+            });
+            
+            window.initializeCountikWidget({
+                container: '#countik-widget-5',
+                themeColor: '#c5d20f',
+                uniqueId: 'glp1newsnow',
+                language: 'en'
+            });
+        }
+    </script>
 
 </body>
 </html>
