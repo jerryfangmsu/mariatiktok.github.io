@@ -31,5 +31,31 @@
         <h3>@tirzepatidetales</h3>
         <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/tirzepatidetales"></iframe>
     </div>
+
+    <!-- Countik Widget - tirzepatidetales -->
+    <div class="widget-container">
+        <h3>@tirzepatidetales - Countik</h3>
+        <div id="countik-widget"></div>
+        <script>
+          (function() {
+            var countikWidget = document.createElement('script');
+            countikWidget.src = 'https://countik.com/widget.js';
+            countikWidget.async = true;
+            countikWidget.onload = function() {
+              if (typeof window.initializeCountikWidget === 'function') {
+                window.initializeCountikWidget({
+                  container: '#countik-widget',
+                  themeColor: '#0edd26',
+                  uniqueId: 'tirzepatidetales',
+                  language: 'en'
+                });
+              }
+            };
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(countikWidget, firstScript);
+          })();
+        </script>
+        <a href="https://countik.com/user/tirzepatidetales" target="_blank" class="pow-countik" style="font-size:11px;color:#333;display:block;padding:4px 3px;text-decoration:none;">Powered by Countik™</a>
+    </div>
 </body>
 </html>
