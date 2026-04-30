@@ -28,31 +28,42 @@
             font-size: 16px;
         }
 
-        /* FIXED: Centered, removed blank space, proper width */
+        /* NEW: This acts like a picture frame that cuts off the extra stuff */
+        .crop-box {
+            width: 320px;
+            height: 120px; /* Exactly tall enough for logo + numbers */
+            margin: 0 auto; /* Centers the box */
+            overflow: hidden; /* This hides the scrollbar AND the extra blank space! */
+        }
+
+        /* The iframe inside the picture frame */
         .counter-frame {
-            width: 320px;       /* Just wide enough for the numbers */
-            max-width: 100%;    /* Protects it on small phone screens */
-            height: 100px;      /* Shortened to remove the giant empty space */
+            width: 320px;
+            height: 300px; /* Made very tall so LiveCounts doesn't trigger its own scrollbar */
             border: none;
-            display: block;     /* Lets us center the iframe */
-            margin: 0 auto;     /* This centers the iframe in the gray box */
         }
     </style>
 </head>
 <body>
     <div class="widget-container">
         <h3>@fifty.410</h3>
-        <iframe class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/fifty.410"></iframe>
+        <div class="crop-box">
+            <iframe scrolling="no" class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/fifty.410"></iframe>
+        </div>
     </div>
 
     <div class="widget-container">
         <h3>@glp1newsnow</h3>
-        <iframe class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/glp1newsnow"></iframe>
+        <div class="crop-box">
+            <iframe scrolling="no" class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/glp1newsnow"></iframe>
+        </div>
     </div>
 
     <div class="widget-container">
         <h3>@phdlifehacks</h3>
-        <iframe class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/phdlifehacks"></iframe>
+        <div class="crop-box">
+            <iframe scrolling="no" class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/phdlifehacks"></iframe>
+        </div>
     </div>
 </body>
 </html>
