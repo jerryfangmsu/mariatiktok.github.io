@@ -16,30 +16,28 @@
         
         .widget-container {
             background-color: #f5f5f5;
-            padding: 10px;
+            padding: 5px 10px; /* Reduced padding to make the gray box smaller */
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px; 
+            margin-bottom: 15px; /* Brought the boxes closer together */
             text-align: center;
         }
         
         h3 {
-            margin: 0 0 10px 0;
+            margin: 5px 0; /* Reduced space around the title */
             font-size: 16px;
         }
 
-        /* NEW: This acts like a picture frame that cuts off the extra stuff */
         .crop-box {
             width: 320px;
-            height: 120px; /* Exactly tall enough for logo + numbers */
-            margin: 0 auto; /* Centers the box */
-            overflow: hidden; /* This hides the scrollbar AND the extra blank space! */
+            height: 135px; /* Increased from 120px to show the bottom of the numbers */
+            margin: 0 auto; 
+            overflow: hidden; 
         }
 
-        /* The iframe inside the picture frame */
         .counter-frame {
             width: 320px;
-            height: 300px; /* Made very tall so LiveCounts doesn't trigger its own scrollbar */
+            height: 300px; 
             border: none;
         }
     </style>
