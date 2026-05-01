@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             max-width: 900px;
-            margin: 50px auto;
+            margin: 50px auto;  /* Kept your original spacious margins */
             padding: 20px;
             background-color: #ffffff;
             color: #333;
@@ -16,25 +16,48 @@
         
         .widget-container {
             background-color: #f5f5f5;
-            padding: 20px;
+            padding: 20px;      /* Kept your original spacious padding */
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
+            margin-bottom: 30px; 
             text-align: center;
+        }
+
+        h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        /* The cropping box to frame the numbers perfectly */
+        .crop-box {
+            width: 320px;
+            height: 135px; /* Exactly tall enough for logo + numbers */
+            margin: 0 auto; 
+            overflow: hidden; /* Hides the scrollbar and bottom blank space */
+        }
+
+        /* The iframe inside the cropping box */
+        .counter-frame {
+            width: 320px;
+            height: 300px; /* Kept tall so Livecounts doesn't trigger its own scrollbar */
+            border: none;
+            margin-top: -25px; /* Pulls the widget up slightly to hide top blank space */
         }
     </style>
 </head>
 <body>
-    <!-- LiveCounts iframe 1 - therisingproject -->
     <div class="widget-container">
         <h3>@therisingproject</h3>
-        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/therisingproject"></iframe>
+        <div class="crop-box">
+            <iframe scrolling="no" class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/therisingproject"></iframe>
+        </div>
     </div>
 
-    <!-- LiveCounts iframe 2 - tirzepatidetales -->
     <div class="widget-container">
         <h3>@tirzepatidetales</h3>
-        <iframe height="80" width="300" frameborder="0" src="https://livecounts.io/embed/tiktok-live-follower-counter/tirzepatidetales"></iframe>
+        <div class="crop-box">
+            <iframe scrolling="no" class="counter-frame" src="https://livecounts.io/embed/tiktok-live-follower-counter/tirzepatidetales"></iframe>
+        </div>
     </div>
 </body>
 </html>
